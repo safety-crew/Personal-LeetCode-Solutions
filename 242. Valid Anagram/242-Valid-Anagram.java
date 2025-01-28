@@ -7,19 +7,19 @@ class Solution {
         //    t, we decrement that index. The array should have all zeros if the two strings
         //    are anagrams.
 
-        if(s.length() != t.length()) {
+        if (s.length() != t.length()) {
             return false;
         }
 
         int[] charsNum = new int[26];
 
-        for(int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             charsNum[s.charAt(i) - 'a']++;
             charsNum[t.charAt(i) - 'a']--;
         }
 
-        for(int num: charsNum) {
-            if(num != 0) {
+        for (int num: charsNum) {
+            if (num != 0) {
                 return false;
             }
         }
