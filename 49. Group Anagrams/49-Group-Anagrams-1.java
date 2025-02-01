@@ -7,7 +7,7 @@ class Solution {
         // that letter.
         // Values are the words that have the same String representation
         // (e.g. cab and abc have the same String representation of
-        // 1110000...) making the values equal to ['abc', 'cab']
+        // 1110000..) making the values equal to ['abc', 'cab']
 
         if (strs.length == 0) {
             return new ArrayList();
