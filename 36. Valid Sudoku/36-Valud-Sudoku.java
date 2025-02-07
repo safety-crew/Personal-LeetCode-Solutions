@@ -11,7 +11,7 @@ class Solution {
            moreover, to decide which hashset (out of the 9 hashsets for all the boxes)
            to use based on specific index, we use this formula: [row/3 * 3 + col/3].
 
-        5. Time Complexity: O(n^2) | Space Complexity: O(3n) -> O(n) -> O(1) [for fixed HashSet number and size -> 27]
+        5. Time Complexity: O(n^2) | Space Complexity: O(3n) -> O(n) -> O(1) [for fixed HashSet number and size -> 27].
          */
 
         int N = 9;
