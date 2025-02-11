@@ -40,3 +40,12 @@ Machine 2:
 Codec decoder = new Codec();
 String[] strs = decoder.decode(msg);
 ```
+Example 2:
+```
+Input: dummy_input = [""]
+Output: [""]
+```
+Constraints:
+- `1 <= strs.length <= 200`
+- `0 <= strs[i].length <= 200`
+- `strs[i]` contains any possible characters out of `256` valid ASCII characters.
