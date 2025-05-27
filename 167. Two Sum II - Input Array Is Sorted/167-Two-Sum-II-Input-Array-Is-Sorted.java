@@ -2,7 +2,7 @@ class Solution {
     public int[] twoSum(int[] numbers, int target) {
         // Define right left and sum variables
         // If sum is greater than the target value we decrease the right
-        // If sum is less than the target value we increase the left
+        // If sum is less than the target value we increase the left.
 
         int left = 0, right = numbers.length - 1;
 
