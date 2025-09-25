@@ -1,25 +1,29 @@
 # [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 
-Given <code>n</code> non-negative integers representing an elevation map where the width of each bar is <code>1</code>, compute how much water it can trap after raining.
+You are given an array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i^th</code> day.
+
+You want to maximize your profit by choosing a **single day**  to buy one stock and choosing a **different day in the future**  to sell that stock.
+
+Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return <code>0</code>.
 
 **Example 1:** 
-<img src="https://assets.leetcode.com/uploads/2018/10/22/rainwatertrap.png" style="width: 412px; height: 161px;">
 
 ```
-Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]
-Output: 6
-Explanation: The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped.
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
 ```
 
 **Example 2:** 
 
 ```
-Input: height = [4,2,0,3,2,5]
-Output: 9
+Input: prices = [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transactions are done and the max profit = 0.
 ```
 
 **Constraints:** 
 
-- <code>n == height.length</code>
-- <code>1 <= n <= 2 * 10^4</code>
-- <code>0 <= height[i] <= 10^5</code>
+- <code>1 <= prices.length <= 10^5</code>
+- <code>0 <= prices[i] <= 10^4</code>
