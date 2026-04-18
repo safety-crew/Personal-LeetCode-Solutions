@@ -12,6 +12,7 @@ class Solution {
                 if (j >= words[i + 1].length()) {
                     return false;
                 }
+                
                 if (words[i].charAt(j) != words[i + 1].charAt(j)) {
                     int currLetter = orderMap.get(words[i].charAt(j));
                     int nextLetter = orderMap.get(words[i + 1].charAt(j));
