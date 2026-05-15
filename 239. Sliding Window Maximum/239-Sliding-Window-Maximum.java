@@ -22,7 +22,7 @@ class Solution {
             // Add the current index to the queue
             deque.offer(i);
 
-            // Add the maximum element of the current window to the result
+            // Add the maximum element of the current window to the result.
             if (i >= k - 1) {
                 result[i - k + 1] = nums[deque.peek()];
             }
